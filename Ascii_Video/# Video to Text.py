@@ -5,12 +5,12 @@ from PIL import Image
 import yt_dlp
 from asciiConverter import image_to_ascii_colored  
 
-WINDOW_WIDTH = 800
-WINDOW_HEIGHT = 600
+WINDOW_WIDTH = 1000
+WINDOW_HEIGHT = 700
 FONT_SIZE = 10
 CHAR_ASPECT_RATIO = 1  
 
-BLACK = (0,0,0)
+BLACK = (60, 60, 60)
 
 
 

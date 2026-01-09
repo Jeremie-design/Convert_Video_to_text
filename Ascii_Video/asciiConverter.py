@@ -1,7 +1,7 @@
 from PIL import Image
 
 
-CHAR_ARRAY = [' ', '.', ':', '*', '#', '@']
+CHAR_ARRAY = ['$', '@', 'B', '%', '8', '&', 'W', 'M', '#', '*', 'o', 'a', 'h', 'k', 'b', 'U', 'Y', 'X', 'z', 'c', 'v', 'u', 'n', 'x', 'r', 'j', 'f', 't', '?', '-', '_', '+', '~', '<', '>', 'i', '!', 'l', 'I', ';', ':', ',', '"', '^', '`', "'", '.', ' ']
 CHAR_ASPECT_RATIO = 1  
 
 def image_to_ascii_colored(image: Image.Image, width_chars: int, height_chars: int):
