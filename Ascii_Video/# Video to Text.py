@@ -7,10 +7,10 @@ from asciiConverter import image_to_ascii_colored
 
 WINDOW_WIDTH = 1000
 WINDOW_HEIGHT = 700
-FONT_SIZE = 10
-CHAR_ASPECT_RATIO = 1  
+FONT_SIZE = 15
+CHAR_ASPECT_RATIO = 1
 
-BLACK = (60, 60, 60)
+BLACK = (50, 50, 50)
 
 
 
@@ -39,13 +39,13 @@ cap = cv2.VideoCapture(video_path)
 if not cap.isOpened():
     raise RuntimeError("Failed to open video file")
 
-fps = cap.get(cv2.CAP_PROP_FPS) or 24
+fps = cap.get(cv2.CAP_PROP_FPS) 
 frame_delay = 1 / fps
 
 pygame.init()
 FONT = pygame.font.SysFont("Courier", FONT_SIZE)
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-pygame.display.set_caption("ASCII Video Player (Color, Fixed Size)")
+pygame.display.set_caption("ASCII Video Player")
 
 # number of characters in the window
 chars_per_row = WINDOW_WIDTH // FONT_SIZE
